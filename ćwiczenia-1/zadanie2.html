@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+        label {
+            font-size: 14px;
+        }
+        label span {
+            color: red;
+        }
+        input, textarea, select {
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        button {
+            background-color: aqua;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ćwiczenie 2</h1>
+
+    <form>
+        <label for="text">Tekst<span>*</span></label>
+        <input required id="text" name="text" type="text" />
+        <br />
+
+        <label for="password">Hasło<span>*</span></label>
+        <input required id="password" name="password" type="password" />
+        <br />
+
+        <label for="checkbox">Checkbox<span>*</span></label>
+        <input required id="checkbox" name="checkbox" type="checkbox" />
+        <br />
+
+
+        <label for="radio">Radio</label>
+        <input type="radio" id="CSS" name="radio" value="CSS">
+        <input type="radio" id="JavaScript" name="radio" value="JavaScript">
+        <br />
+
+        <label for="cars">Samochód</label>
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br />
+
+        <label for="textarea">Długi tekst</label>
+        <textarea id="textarea"></textarea>
+        <br />
+
+        <button type="reset">Reset</button>
+        <button>Wyślij</button>
+    </form>
+</body>
+</html>
